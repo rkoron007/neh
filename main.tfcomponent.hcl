@@ -1,5 +1,5 @@
 stack "pet-nulls-stack" {
-    source = "app.staging.terraform.io/component-configurations/pet-nulls-stack"
+    source = "https://app.staging.terraform.io/component-configurations/pet-nulls-stack"
     version = "1.0.0"
 
     inputs = {
