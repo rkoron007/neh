@@ -7,3 +7,4 @@ stack "tfstack-brand-new-friend" {
         prefix = var.prefix
     }
 }
+
