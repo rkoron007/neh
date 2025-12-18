@@ -10,12 +10,23 @@ required_providers {
    }
 }
 
+
+variable "prefix" {
+  type        = string
+  description = "Prefix for resource names"
+}
+
+variable "instances" {
+  type        = number
+  description = "Prefix for resource names"
+}
+
 stack "tfstack-brand-new-friend" {
     source = "app.staging.terraform.io/component-configurations/tfstack-brand-new-friend"
     version = "1.0.1"
 
     inputs = {
-        instances = 2
-        prefix = "apple"
+        instances = var.instances
+        prefix = var.prefix
     }
 }
