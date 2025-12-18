@@ -15,7 +15,7 @@ stack "tfstack-brand-new-friend" {
     version = "1.0.1"
 
     inputs = {
-        instances = var.instances
-        prefix = var.prefix
+        instances = 2
+        prefix = "apple"
     }
 }
